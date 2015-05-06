@@ -9,5 +9,5 @@ dates <- paste(data$Date, data$Time, sep='|')
 dates <- strptime(dates, format='%d/%m/%Y|%H:%M:%S', tz='GMT')
 
 png(filename='plot2.png', width=480, height=480)
-plot(x=dates, y=data$Global_active_power, type="l", ylab="Global Active Power (kilowats)")
+plot(x=dates, y=data$Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowats)")
 dev.off()
